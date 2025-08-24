@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black;
+  overflow-x: hidden;
+}
+
+.navbar__item-bg {
+  @apply bg-gradient-to-b from-[#FFFFFF]/[.17] to-[#D8D4D4]/[.83];
+}
+
+/* code for text reflection */
+.mirror-vertical {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.mirror-vertical::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  color: transparent;
+  transform: scaleY(-1);
+  filter: blur(2.2px);
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5));
+  transform-origin: bottom;
+  z-index: -1;
+  background-clip: text;
+}
+
+.mirror-vertical-lg {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.mirror-vertical-lg::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  top: -55%;
+  height: 100%;
+  color: transparent;
+  transform: scaleY(-1);
+  filter: blur(2.2px);
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5));
+  transform-origin: bottom;
+  z-index: -1;
+  background-clip: text;
+}
