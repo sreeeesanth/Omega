@@ -10,9 +10,9 @@ const About = () => {
       >
         <h2
           className="mirror-vertical text-center font-bold font-orbitron font-700 xl:scale-100 text-6xl lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8] "
-          data-text="ABOUT MEC.HACK"
+          data-text="ABOUT OMEGA"
         >
-          ABOUT MEC.HACK
+          ABOUT OMEGA
         </h2>
         <p className="text-center mt-[120px] max-w-[1055px] px-[35px] max-sm:text-[12px] max-sm:mt-[54px]">
           {AboutData[0].about_mechack}

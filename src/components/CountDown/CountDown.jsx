@@ -28,31 +28,37 @@ const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
 
 export default function CountDown() {
-  const [initialTime, setInitialTime] = useState(null);
-  const [currentTime, setCurrentTime] = useState(Date.now() / 1000);
+  const [remainingTime, setRemainingTime] = useState(0);
 
   useEffect(() => {
-    const startTime = new Date("2024-07-25T00:00:00").getTime() / 1000;
-    const endTime = new Date("2024-09-30T23:59:59").getTime() / 1000;
-    const totalDuration = endTime - startTime;
+    const targetDate = new Date("2025-09-10T23:59:59").getTime();
 
-    setInitialTime(totalDuration);
+    const updateCountdown = () => {
+      const now = Date.now();
+      const timeLeft = Math.max(0, Math.floor((targetDate - now) / 1000));
+      setRemainingTime(timeLeft);
+    };
 
-    const interval = setInterval(() => {
-      setCurrentTime(Date.now() / 1000);
-    }, 1000);
+    // Initial calculation
+    updateCountdown();
+
+    const interval = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(interval);
   }, []);
 
-  if (initialTime === null) {
-    return null;
+  if (remainingTime <= 0) {
+    return (
+      <div className="flex flex-col items-center justify-center w-screen font-bold text-white font-orbitron xl:mt-[700px] lg:mt-[670px] sm:mt-[700px] mt-[600px]">
+        <h2 className="text-6xl">Event has started!</h2>
+      </div>
+    );
   }
-
-  const remainingTime =
-    initialTime -
-    (currentTime - new Date("2024-07-25T00:00:00").getTime() / 1000);
-  const daysDuration = Math.ceil(initialTime / daySeconds) * daySeconds;
+  const daysDuration = Math.ceil(remainingTime / daySeconds) * daySeconds;
+  const days = getTimeDays(remainingTime);
+  const hours = getTimeHours(remainingTime);
+  const minutes = getTimeMinutes(remainingTime);
+  const seconds = remainingTime % 60;
 
   return (
     <div className="flex flex-col items-center justify-center w-screen lg:gap-32 md:gap-24  xl:gap-40 font-bold text-white font-orbitron xl:mt-[700px] lg:mt-[670px] sm:mt-[700px] mt-[600px] overflow-hidden">
@@ -67,13 +73,11 @@ export default function CountDown() {
             <CountdownCircleTimer
               {...timerProps}
               colors={["#ffffff", "transparent"]}
-              duration={daysDuration}
+              duration={daysDuration || daySeconds}
               initialRemainingTime={remainingTime}
             >
               {({ elapsedTime, color }) => (
-                <span style={{ color }}>
-                  {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
-                </span>
+                <span style={{ color }}>{renderTime("days", days)}</span>
               )}
             </CountdownCircleTimer>
             <div className="mt-2 text-3xl font-semibold ">DAYS</div>
@@ -89,9 +93,7 @@ export default function CountDown() {
               })}
             >
               {({ elapsedTime, color }) => (
-                <span style={{ color }}>
-                  {renderTime("hours", getTimeHours(daySeconds - elapsedTime))}
-                </span>
+                <span style={{ color }}>{renderTime("hours", hours)}</span>
               )}
             </CountdownCircleTimer>
             <div className="mt-2 text-3xl font-semibold">HOURS</div>
@@ -109,12 +111,7 @@ export default function CountDown() {
               })}
             >
               {({ elapsedTime, color }) => (
-                <span style={{ color }}>
-                  {renderTime(
-                    " minutes",
-                    getTimeMinutes(hourSeconds - elapsedTime)
-                  )}
-                </span>
+                <span style={{ color }}>{renderTime("minutes", minutes)}</span>
               )}
             </CountdownCircleTimer>
             <div className="mt-2 text-3xl font-semibold">MINUTES</div>
@@ -130,9 +127,7 @@ export default function CountDown() {
               })}
             >
               {({ elapsedTime, color }) => (
-                <span style={{ color }}>
-                  {renderTime("seconds", getTimeSeconds(elapsedTime))}
-                </span>
+                <span style={{ color }}>{renderTime("seconds", seconds)}</span>
               )}
             </CountdownCircleTimer>
             <div className="mt-2 text-3xl font-semibold">SECONDS</div>

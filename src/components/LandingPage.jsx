@@ -22,8 +22,8 @@ const LandingPage = () => {
     <div id="home">
       <div className="flex flex-col justify-center items-center mt-[135px]">
         <div className="text-[128px] scale-[0.45] max-sm:text-[30vw] sm:scale-[0.75] lg:scale-[0.85] font-[700] text-white font-[anybody] max-sm:mb-[100px] ">
-          <p className="mirror-vertical-lg" data-text="MEC.HACK">
-            MEC.HACK
+          <p className="mirror-vertical-lg" data-text="OMEGA">
+            OMEGA
           </p>
         </div>
         <div className="flex gap-[50px] max-sm:gap-[20px] sm:mt-[80px] max-sm:mt-[-10vw]">
@@ -41,10 +41,10 @@ const LandingPage = () => {
           </div>
           <div className="flex flex-col gap-[40px] max-sm:gap-[20px] justify-center items-center">
             <p className="text-white font-orbitron text-[32px] scale-[0.70] lg:scale-[0.85] xl:scale-100 font-[700]">
-              DATE
+              Oct 18,19
             </p>
             <p className="text-white font-orbitron text-[32px] scale-[0.70] lg:scale-[0.85] font-[700]">
-              LOCATION
+              Govt. Model Engineering College, Thrikkakara
             </p>
           </div>
         </div>
