@@ -12,7 +12,7 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import IeeeLogo from "@/assets/logos/ieee.png";
-import CSLogo from "@/assets/logos/cs.png";
+import RASLogo from "@/assets/logos/ras.png";
 import { NavbarItems } from "@/constants";
 import { useParams } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -80,7 +80,7 @@ export default function Nav() {
           <Image src={IeeeLogo} alt="ieee"/>
         </NavbarItem>
         <NavbarItem className="m-auto">
-            <Image src={CSLogo} alt="cs"/>
+            <Image src={RASLogo} alt="ras"/>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent
@@ -107,7 +107,7 @@ export default function Nav() {
       </NavbarContent>
       <NavbarContent justify="end" className="max-lg:hidden">
         <NavbarItem>
-            <Image src={CSLogo} alt="cs"/>
+            <Image src={RASLogo} alt="ras"/>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
