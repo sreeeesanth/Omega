@@ -14,14 +14,15 @@ export const NavbarItems = [
     title: "ABOUT",
     link: "#about",
   },
-  {
-    title: "SPONSORS",
-    link: "#sponsors",
-  },
-  {
-    title: "REGISTRATION",
-    link: "#",
-  },
+  // },
+  // {
+  //   title: "SPONSORS",
+  //   link: "#sponsors",
+  // },
+  // {
+  //   title: "REGISTRATION",
+  //   link: "#",
+  // },
   {
     title: "FAQ",
     link: "#faq",
