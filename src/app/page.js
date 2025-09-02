@@ -15,6 +15,7 @@ import MeshBGFlipped from "@/assets/bg/bg-mesh-flipped.png";
 import MeshBGMobile from "@/assets/bg/bg-mesh-mobile.png";
 import Image from "next/image";
 
+//uncomment the sponsorship component if needed
 export default function Home() {
   return (
     <div className="relative">
@@ -54,7 +55,7 @@ export default function Home() {
       <LandingPage />
       <CountDown />
       <About />
-      <Sponsors />
+      {/* <Sponsors /> */} 
       <Rewards />
       <Timeline />
       <Faq />

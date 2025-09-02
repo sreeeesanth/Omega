@@ -62,7 +62,7 @@ export default function Nav() {
       <NavbarContent justify="start" className="justify-start max-lg:hidden">
         <NavbarItem className="flex items-center">
           <NavbarBrand className="lg:p-4 mt-2">
-            <Image src={IeeeLogo} alt="ieee"/>
+            <Image src={IeeeLogo} alt="ieee" width={96} height={96}/>
           </NavbarBrand>
         </NavbarItem>
       </NavbarContent>
@@ -77,10 +77,10 @@ export default function Nav() {
         />
 
         <NavbarItem className="m-auto">
-          <Image src={IeeeLogo} alt="ieee"/>
+          <Image src={IeeeLogo} alt="ieee" width={82} height={82}/>
         </NavbarItem>
         <NavbarItem className="m-auto">
-            <Image src={RASLogo} alt="ras"/>
+          <Image src={RASLogo} alt="ras" width={112} height={112}/>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent
@@ -107,7 +107,7 @@ export default function Nav() {
       </NavbarContent>
       <NavbarContent justify="end" className="max-lg:hidden">
         <NavbarItem>
-            <Image src={RASLogo} alt="ras"/>
+          <Image src={RASLogo} alt="ras" width={112} height={112}/>
         </NavbarItem>
       </NavbarContent>
     </Navbar>

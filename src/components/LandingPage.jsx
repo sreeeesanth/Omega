@@ -26,24 +26,26 @@ const LandingPage = () => {
             OMEGA
           </p>
         </div>
-        <div className="flex gap-[50px] max-sm:gap-[20px] sm:mt-[80px] max-sm:mt-[-10vw]">
-          <div className="flex flex-col gap-[40px] max-sm:gap-[20px] justify-start">
+        <div className="flex flex-col gap-[20px] [@media(max-width:1050px)]:gap-[20px] sm:gap-[40px] sm:mt-[80px] max-sm:mt-[-10vw] justify-center items-center w-full" style={{ marginTop: 'clamp(120px, 20vw, 180px)' }}>
+          {/* Calendar row */}
+          <div className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
             <Image
               src={Calendar}
               alt="Calendar Icon"
-              className="invert brightness-0 w-[50px] h-[50px] scale-[0.8] sm:scale-[0.9] lg:scale-100"
+              className="invert brightness-0 w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] lg:w-[72px] lg:h-[72px]"
             />
+            <p className="text-white font-orbitron text-[24px] sm:text-[32px] scale-[0.70] lg:scale-[0.85] xl:scale-100 font-[700] text-center sm:text-left">
+              Oct 18,19
+            </p>
+          </div>
+          {/* Location row */}
+          <div className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
             <Image
               src={Location}
               alt="Location Icon"
-              className="invert brightness-0 w-[50px] h-[50px] scale-[0.8] sm:scale-[0.9] lg:scale-100"
+              className="invert brightness-0 w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] lg:w-[72px] lg:h-[72px]"
             />
-          </div>
-          <div className="flex flex-col gap-[40px] max-sm:gap-[20px] justify-center items-center">
-            <p className="text-white font-orbitron text-[32px] scale-[0.70] lg:scale-[0.85] xl:scale-100 font-[700]">
-              Oct 18,19
-            </p>
-            <p className="text-white font-orbitron text-[32px] scale-[0.70] lg:scale-[0.85] font-[700]">
+            <p className="text-white font-orbitron text-[24px] sm:text-[32px] scale-[0.70] lg:scale-[0.85] xl:scale-100 font-[700] text-center sm:text-left">
               Govt. Model Engineering College, Thrikkakara
             </p>
           </div>
