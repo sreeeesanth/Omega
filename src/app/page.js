@@ -9,53 +9,28 @@ import {
   Rewards,
   Sponsors,
   Timeline,
-} from "@/components";
-import MeshBG from "@/assets/bg/bg-mesh.png";
-import MeshBGFlipped from "@/assets/bg/bg-mesh-flipped.png";
-import MeshBGMobile from "@/assets/bg/bg-mesh-mobile.png";
+} 
+from "@/components";
 import Image from "next/image";
+import OmegaLogo from "@/assets/logos/OmegaLogo.png";
 
 //uncomment the sponsorship component if needed
 export default function Home() {
   return (
-    <div className="relative">
-      <div className="flex justify-center">
-        <div
-          className="absolute top-[-307px] bg-[#D9D9D9] h-[307px] w-screen"
-          style={{ boxShadow: "0px 0px 2938.32px 0px #FFFFFF" }}
-        />
+    <div className="relative h-screen w-screen  ">
+      <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-14 md: h-[420px] w-[400px] sm:h-[400px] w-[380px] shadow-xl relative ">
+          <Image src={OmegaLogo} alt="Omega Logo" className="" fill />
+        </div>
       </div>
       <Navbar />
       <div className="absolute -z-[10] mt-[320px] overflow-hidden">
-        <div className=" max-sm:hidden">
-          <Image
-            src={MeshBG}
-            alt="Mesh Background"
-            className="relative w-screen"
-          />
-          <Image
-            src={MeshBG}
-            alt="Mesh Background Flipped"
-            className="relative w-screen scale-[-1] top-0"
-          />
-        </div>
-        <div className="sm:hidden">
-          <Image
-            src={MeshBGMobile}
-            alt="Mesh Background"
-            className="relative w-screen h-[350px]"
-          />
-          <Image
-            src={MeshBGFlipped}
-            alt="Mesh Background Flipped"
-            className="relative w-screen h-[30px]"
-          />
-        </div>
+        <div className=" max-sm:hidden"></div>
       </div>
       <LandingPage />
       <CountDown />
       <About />
-      {/* <Sponsors /> */} 
+      {/* <Sponsors /> */}
       <Rewards />
       <Timeline />
       <Faq />
