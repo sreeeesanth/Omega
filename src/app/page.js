@@ -9,6 +9,7 @@ import {
   Rewards,
   Sponsors,
   Timeline,
+  ParticlesBackground,
 } from "@/components";
 import MeshBG from "@/assets/bg/bg-mesh.png";
 import MeshBGFlipped from "@/assets/bg/bg-mesh-flipped.png";
@@ -19,6 +20,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="relative">
+      <ParticlesBackground />
       <div className="flex justify-center">
         <div
           className="absolute top-[-307px] bg-[#D9D9D9] h-[307px] w-screen"
@@ -26,39 +28,20 @@ export default function Home() {
         />
       </div>
       <Navbar />
-      <div className="absolute -z-[10] mt-[320px] overflow-hidden">
-        <div className=" max-sm:hidden">
-          <Image
-            src={MeshBG}
-            alt="Mesh Background"
-            className="relative w-screen"
-          />
-          <Image
-            src={MeshBG}
-            alt="Mesh Background Flipped"
-            className="relative w-screen scale-[-1] top-0"
-          />
-        </div>
-        <div className="sm:hidden">
-          <Image
-            src={MeshBGMobile}
-            alt="Mesh Background"
-            className="relative w-screen h-[350px]"
-          />
-          <Image
-            src={MeshBGFlipped}
-            alt="Mesh Background Flipped"
-            className="relative w-screen h-[30px]"
-          />
-        </div>
-      </div>
       <LandingPage />
       <CountDown />
       <About />
-      {/* <Sponsors /> */} 
+      {/* Timeline Section */}
+      <div className="relative bg-[#b12020] text-white">
+        <ParticlesBackground />
+        <Timeline />
+      </div>
+      {/* Faq Section */}
+      <div className="relative bg-[#b12020] text-white py-12">
+        <ParticlesBackground />
+        <Faq />
+      </div>
       <Rewards />
-      <Timeline />
-      <Faq />
       <Contact />
       <Footer />
     </div>

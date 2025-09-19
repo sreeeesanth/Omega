@@ -41,7 +41,7 @@ const TimelineSection = () => {
   return (
     <div
       id="timeline"
-      className="relative flex flex-col items-center justify-center p-2 bg-black"
+      className="relative flex flex-col items-center justify-center p-2 "
     >
       <div className="m-auto container font-generalSans min-h-screen flex justify-center flex-col items-center pt-[100px]">
         <h2 className="text-center font-bold text-4xl lg:text-5xl text-white mb-16 tracking-wider">
