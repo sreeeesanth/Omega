@@ -1,11 +1,15 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Calendar from "@/assets/landing_page/calendar.png";
 import Location from "@/assets/landing_page/location.png";
+import { gsap } from "gsap";
 
 const LandingPage = () => {
+  const calendarRef = useRef(null);
+  const locationRef = useRef(null);
+
   // code for devfolio button
   useEffect(() => {
     const script = document.createElement("script");
@@ -16,6 +20,40 @@ const LandingPage = () => {
     return () => {
       document.body.removeChild(script);
     };
+  }, []);
+
+  useEffect(() => {
+    // Animations
+    gsap.fromTo(
+      calendarRef.current,
+      { opacity: 0, x: -50 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: calendarRef.current,
+          start: "top center+=200",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      locationRef.current,
+      { opacity: 0, x: 50 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        delay: 0.3,
+        scrollTrigger: {
+          trigger: locationRef.current,
+          start: "top center+=200",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
   }, []);
 
   const handleButtonClick = () => {
@@ -30,7 +68,7 @@ const LandingPage = () => {
         </div>
         <div className="flex flex-row gap-[20px] [@media(max-width:1050px)]:gap-[20px] sm:gap-[40px] sm:mt-[80px] max-sm:mt-[-10vw] justify-center items-center w-full" style={{ marginTop: 'clamp(120px, 20vw, 180px)' }}>
           {/* Calendar row */}
-          <div className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
+          <div ref={calendarRef} className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
             <Image
               src={Calendar}
               alt="Calendar Icon"
@@ -41,7 +79,7 @@ const LandingPage = () => {
             </p>
           </div>
           {/* Location row */}
-          <div className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
+          <div ref={locationRef} className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
             <Image
               src={Location}
               alt="Location Icon"

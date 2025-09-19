@@ -28,7 +28,7 @@ const About = () => {
         > 
           ABOUT IEEE
         </h2>
-        <p className="text-center mt-[120px] leading-[2.5] max-w-[1055px]  text-lg px-[35px] max-sm:text-[12px] max-sm:mt-[54px]">
+        <p className="text-center mt-[120px] leading-[2.5] max-w-[1055px] text-lg px-[35px] max-sm:text-[16px] max-sm:mt-[54px]">
           {AboutData[0].about_ieee}
         </p>
       </div>

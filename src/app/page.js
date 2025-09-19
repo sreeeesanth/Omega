@@ -21,7 +21,7 @@ export default function Home() {
     <div className="relative h-screen w-screen  ">
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center  ">
-          <Image src={OmegaLogo} alt="Omega Logo" className="mt-14 md: h-[400px] w-[400px] sm:h-[400px] w-[380px] relative z-30" fill />
+          <Image src={OmegaLogo} alt="Omega Logo" className="mt-14 md: h-[400px] w-[400px] sm:h-[400px] w-[380px]  relative z-30" fill />
         </div>
       </div>
       <Navbar />
@@ -29,7 +29,6 @@ export default function Home() {
         <div className=" max-sm:hidden"></div>
       </div>
       <LandingPage />
-           <GoogleFormButton />
       <CountDown />
       <About />
       {/* <Sponsors /> */}
