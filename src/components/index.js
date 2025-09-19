@@ -1,23 +1,11 @@
-import About from "./About/About";
-import Contact from "./Contact/Contact";
-import CountDown from "./CountDown/CountDown";
-import Faq from "./Faq/Faq";
-import Footer from "./Footer/Footer";
-import LandingPage from "./LandingPage";
-import Rewards from "./Rewards/Rewards";
-import Sponsors from "./Sponsors/Sponsors";
-import Timeline from "./Timeline/Timeline";
-import Navbar from "./Navbar";
-
-export {
-  About,
-  Contact,
-  CountDown,
-  Faq,
-  Footer,
-  LandingPage,
-  Navbar,
-  Rewards,
-  Sponsors,
-  Timeline,
-};
+export { default as About } from './About/About';
+export { default as Contact } from './Contact/Contact';
+export { default as CountDown } from './CountDown/CountDown';
+export { default as Faq } from './Faq/Faq';
+export { default as Footer } from './Footer/Footer';
+export { default as LandingPage } from './LandingPage';
+export { default as Navbar } from './Navbar';
+export { default as Rewards } from './Rewards/Rewards';
+export { default as Sponsors } from './Sponsors/Sponsors';
+export { default as Timeline } from './Timeline/Timeline';
+export { default as ParticlesBackground } from './ParticlesBackground/ParticlesBackground';

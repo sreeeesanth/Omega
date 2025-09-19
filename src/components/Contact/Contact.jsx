@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col pt-[100px] max-sm:pt-[50px] pb-[80px] max-sm:px-[30px] justify-center items-center"
+      className="flex flex-col pt-[100px] max-sm:pt-[50px] pb-[80px] max-sm:px-[30px] justify-center items-center z-10"
     >
       <h2
         className="mb-[40px] sm:mb-[80px] text-white text-[64px] mirror-vertical leading-[70px] scale-[0.6] sm:scale-[0.8] lg:scale-100 font-[700] font-orbitron"

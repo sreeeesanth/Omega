@@ -4,7 +4,7 @@ import Profile from "@/assets/profile_pics/default.png";
 
 const ContactCard = ({ name, position }) => {
   return (
-    <div className="flex flex-col items-center justify-start max-sm:scale-[0.9] w-[302px] h-[392px] p-[11px] mb-[20px] rounded-[30px] relative bg-[#ffffff]">
+    <div className="flex flex-col items-center justify-start max-sm:scale-[0.9] w-[302px] h-[392px] p-[11px] mb-[20px] rounded-[30px] relative bg-[#ffffff] z-20">
       <Image
         src={Profile}
         alt="Profile Picture"

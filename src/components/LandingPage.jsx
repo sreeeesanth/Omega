@@ -19,10 +19,12 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div id="home" >
-      <div className="flex flex-col justify-center items-center ">
-                <div className="text-[128px] scale-[0.45] max-sm:text-[30vw] sm:scale-[0.75] lg:scale-[0.85] font-[700] text-white font-[anybody] max-sm:mb-[100px] ">
-          
+    <div id="home">
+      <div className="flex flex-col justify-center items-center mt-[135px]">
+        <div className="text-[128px] scale-[0.45] max-sm:text-[30vw] sm:scale-[0.75] lg:scale-[0.85] font-[700] text-white font-[anybody] max-sm:mb-[100px] ">
+          <p className="mirror-vertical-lg" data-text="OMEGA">
+            OMEGA
+          </p>
         </div>
         <div className="flex flex-row gap-[20px] [@media(max-width:1050px)]:gap-[20px] sm:gap-[40px] sm:mt-[80px] max-sm:mt-[-10vw] justify-center items-center w-full" style={{ marginTop: 'clamp(120px, 20vw, 180px)' }}>
           {/* Calendar row */}
@@ -48,7 +50,13 @@ const LandingPage = () => {
             </p>
           </div> 
         </div>
-        <button></button>
+        <button
+          className="apply-button mt-8"
+          data-hackathon-slug="omega-2023"
+          data-button-theme="light"
+        >
+          Apply with Devfolio
+        </button>
       </div>
     </div>
   );

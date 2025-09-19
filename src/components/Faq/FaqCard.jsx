@@ -9,11 +9,11 @@ const FaqCard = ({ question, answer }) => {
   return (
     <div className="relative w-[85vw] xl:w-[1080px] pt-[1px] pl-[1px] rounded-[14px]">
       <div
-        className="absolute inset-0 bg-gradient-to-br from-[rgba(59,90,255,0.44)] to-transparent rounded-[14px] pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-br from-[rgba(248,241,241,0.44)] to-transparent rounded-[14px] pointer-events-none"
         aria-hidden="true"
       ></div>
       <div
-        className={`relative bg-[#080808] max-sm:bg-[#101010] transition-all duration-400 ease-in-out w-full px-[25px] pt-[20px] rounded-[14px] ${
+        className={`relative  transition-all duration-400 ease-in-out w-full px-[25px] pt-[20px] rounded-[14px] ${
           !active ? "pb-[20px]" : ""
         }`}
       >
