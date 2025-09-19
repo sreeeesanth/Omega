@@ -7,7 +7,7 @@ const FaqCard = ({ question, answer }) => {
   const [active, setActive] = useState(false);
 
   return (
-    <div className="relative w-[85vw] xl:w-[1080px] pt-[1px] pl-[1px] rounded-[14px]">
+    <div className="relative w-[85vw] z-30 xl:w-[1080px] pt-[1px] pl-[1px] rounded-[14px]">
       <div
         className="absolute inset-0 bg-gradient-to-br from-[rgba(248,241,241,0.44)] to-transparent rounded-[14px] pointer-events-none"
         aria-hidden="true"

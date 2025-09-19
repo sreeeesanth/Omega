@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <div
       id="faq"
-      className="min-h-screen flex flex-col justify-center items-center pt-[168px] max-sm:pt-[80px] px-[40px] max-sm:px-[27px]"
+      className="min-h-screen z-20 flex flex-col justify-center items-center pt-[168px] max-sm:pt-[20px] px-[40px] max-sm:px-[27px]"
     >
       <h1
         className="mirror-vertical mb-[50px] sm:mb-[100px] text-white text-[80px] leading-[75px] scale-[0.6] sm:scale-[0.8] lg:scale-100 font-[700] font-orbitron"

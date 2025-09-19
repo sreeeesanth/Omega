@@ -61,7 +61,7 @@ export default function CountDown() {
   const seconds = remainingTime % 60;
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen lg:gap-32 md:gap-24  xl:gap-40 font-bold text-white font-orbitron xl:mt-[700px] lg:mt-[670px] sm:mt-[700px] mt-[600px] overflow-hidden">
+    <div className="flex flex-col items-center justify-center w-screen lg:gap-32 md:gap-24  xl:gap-40 font-bold text-white font-orbitron xl:mt-[120px] lg:mt-[100px] sm:mt-[100px] mt-[130px] overflow-hidden">
       <div className="xl:scale-100 text-6xl lg:scale-90 md:scale-75 scale-[.65] ">
         <h2 data-text="COUNTDOWN" className="mirror-vertical leading-[60.19px]">
           COUNTDOWN

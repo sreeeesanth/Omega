@@ -18,6 +18,10 @@ const LandingPage = () => {
     };
   }, []);
 
+  const handleButtonClick = () => {
+    window.open("https://forms.gle/exampleGoogleFormLink", "_blank"); // Replace with your actual link
+  };
+
   return (
     <div id="home" >
       <div className="flex flex-col justify-center items-center ">
@@ -48,7 +52,7 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <button></button>
+
       </div>
     </div>
   );

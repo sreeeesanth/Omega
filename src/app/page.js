@@ -13,14 +13,15 @@ import {
 from "@/components";
 import Image from "next/image";
 import OmegaLogo from "@/assets/logos/OmegaLogo.png";
+import GoogleFormButton from "@/components/GoogleFormButton";
 
-//uncomment the sponsorship component if needed
+//uncomment the sponsorship compīonent if needed
 export default function Home() {
   return (
     <div className="relative h-screen w-screen  ">
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center  ">
-          <Image src={OmegaLogo} alt="Omega Logo" className="mt-14 md: h-[400px] w-[400px] sm:h-[400px] w-[380px] shadow-xl relative" fill />
+          <Image src={OmegaLogo} alt="Omega Logo" className="mt-14 md: h-[400px] w-[400px] sm:h-[400px] w-[380px] relative z-30" fill />
         </div>
       </div>
       <Navbar />
@@ -28,13 +29,14 @@ export default function Home() {
         <div className=" max-sm:hidden"></div>
       </div>
       <LandingPage />
+           <GoogleFormButton />
       <CountDown />
       <About />
       {/* <Sponsors /> */}
       <Rewards />
       <Timeline />
       <Faq />
-      <Contact />
+      <GoogleFormButton />
       <Footer />
     </div>
   );
