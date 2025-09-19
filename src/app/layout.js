@@ -15,6 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Omega 2023",
   description: "Annual Tech Fest of Govt. Model Engineering College",
+   icon: "/image.png",
 };
 
 export default function RootLayout({ children }) {
