@@ -1,11 +1,13 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
 
 // load the client-only Particles component dynamically
+
 const ParticlesBackground = dynamic(
   () => import("@/components/ParticlesBackground/ParticlesBackground"),
-  { ssr: false }
+  
 );
 
 const inter = Inter({ subsets: ["latin"] });
