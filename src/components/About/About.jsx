@@ -14,7 +14,7 @@ const About = () => {
         >
           ABOUT OMEGA
         </h2>
-        <p className="text-center mt-[120px] max-w-[1055px] px-[35px] max-sm:text-[12px] max-sm:mt-[54px]">
+        <p className="text-center mt-[120px] leading-[2.5] max-w-[1055px] px-[35px] max-sm:text-[12px] max-sm:mt-[54px]">
           {AboutData[0].about_mechack}
         </p>
       </div>
@@ -28,7 +28,7 @@ const About = () => {
         > 
           ABOUT IEEE
         </h2>
-        <p className="text-center mt-[120px] max-w-[1055px] px-[35px] max-sm:text-[12px] max-sm:mt-[54px]">
+        <p className="text-center mt-[120px] leading-[2.5] max-w-[1055px] px-[35px] max-sm:text-[12px] max-sm:mt-[54px]">
           {AboutData[0].about_ieee}
         </p>
       </div>
