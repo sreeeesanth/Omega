@@ -11,7 +11,7 @@ const GoogleFormButton = () => {
         onClick={handleClick}
         className="z-10 px-6 py-3 bg-[#d53232] text-white font-bold rounded-lg hover:bg-[#e32e2e] transition duration-300"
       >
-        Fill Out the Form
+        REGISTER NOW
       </button>
     </div>
   );

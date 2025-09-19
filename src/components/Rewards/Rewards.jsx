@@ -11,9 +11,9 @@ const Rewards = () => {
     >
       <h2
         className="mirror-vertical text-center font-bold font-orbitron font-700 xl:scale-100 text-6xl lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8]"
-        data-text="PRIZES"
+        data-text="ONE LAKH PRIZE POOL"
       >
-        PRIZES
+       ONE LAKH PRIZE POOL
       </h2>
       <div className="flex md:flex-row mt-[140px] gap-[160px] flex-col max-sm:m-[54px] max-sm:gap-[45px] px-[50px]">
         {RewardsData.map((reward, index) => (
