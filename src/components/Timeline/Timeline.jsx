@@ -63,15 +63,15 @@ const TimelineSection = () => {
         {
           strokeDasharray: length,
           strokeDashoffset: length,
-          opacity: 0,
+          opacity: 0.2,
         },
         {
           strokeDashoffset: 0,
           opacity: 1,
-          duration: 0.6, // Faster duration
+          duration: 2, // Faster duration
           ease: "power1.inOut",
         },
-        index * 0.2 // Reduced stagger time
+        index * 0.1 // Reduced stagger time
       );
     });
 
