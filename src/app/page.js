@@ -35,7 +35,7 @@ export default function Home() {
       {/* <Sponsors /> */}
       <Rewards />
       <Timeline />
-      <Faq />
+     
       <GoogleFormButton />
       <Footer />
     </div>
