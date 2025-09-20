@@ -10,7 +10,7 @@ const TimelineSection = () => {
 
   const hackathonEvents = [
     {
-      date: "4th October",
+      date: "20th September",
       title: "Registration Open",
       description: "Join us! Registration starts today. Secure your spot now.",
     },
