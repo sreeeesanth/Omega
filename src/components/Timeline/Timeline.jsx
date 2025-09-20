@@ -14,35 +14,17 @@ const TimelineSection = () => {
       title: "Registration Open",
       description: "Join us! Registration starts today. Secure your spot now.",
     },
-    {
-      date: "5th October",
-      title: "Registration Close",
+      {
+      date: "18th October",
+      title: "OMEGA Begins - The arena comes alive.",
       description: "Final chance! Registration ends soon. Don't miss out.",
     },
     {
-      date: "6th October",
-      title: "Team Formation",
-      description:
-        "Form your dream team! Connect with fellow hackers and build amazing projects together.",
+      date: "19th October",
+      title: "OMEGA Finale - Champions are crowned",
+      description: "Final chance! Registration ends soon. Don't miss out.",
     },
-    {
-      date: "7th October",
-      title: "Problem Statement",
-      description:
-        "The challenges are revealed! Get ready to tackle exciting problems and showcase your skills.",
-    },
-    {
-      date: "21st October",
-      title: "Hackathon Begins",
-      description:
-        "The main event starts! 24 hours of coding, creativity, and innovation await you.",
-    },
-    {
-      date: "22nd October",
-      title: "Project Submission & Awards",
-      description:
-        "Time's up! Submit your amazing projects and celebrate the incredible solutions created.",
-    },
+
   ];
 
   useEffect(() => {

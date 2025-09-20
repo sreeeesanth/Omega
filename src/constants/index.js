@@ -35,22 +35,21 @@ export const NavbarItems = [
 
 export const FaqData = [
   {
-    question: "What is the team size?",
-    answer: "A team can have 2 to 4 members.",
+    question: "When and where is the Event taking place? ",
+    answer: "The Event will take place on October 18,19 at Model Engineering College, Kochi.",
   },
   {
-    question: "Is there any registration fee?",
-    answer: "Nada. Participation in the hackathon is completely free of cost.",
+    question: "What are the judging criteria?",
+    answer: "Robots will be judged on accuracy, speed, path optimization, technical design, innovation, and presentation. ",
   },
   {
-    question: "When and where is the hackathon taking place?",
+    question: "Should all the members of the team be from the same college?",
+    answer:"All the team members don't have to be from the same college.",
+  },
+  {
+    question: "Who is organising the Event OMEGA?",
     answer:
-      "The hackathon will take place on September 21 & 22 at Model Engineering College, Kochi.",
-  },
-  {
-    question: "Can I work on a project that I've already started?",
-    answer:
-      "No, all projects must be developed from scratch during the hackathon to ensure fairness and equal opportunities for all participants.",
+      "The hackathon is organised by IEEE Robotics and automation society(RAS) MEC SB.",
   },
   {
     question: "What are the judging criteria?",
@@ -62,9 +61,10 @@ export const FaqData = [
     answer: "All the team members don't have to be from the same college.",
   },
   {
-    question: "Who is organising the hackathon?",
-    answer: "The hackathon is organised by IEEE Computer Society MEC SB.",
+    question: "What is the team size?",
+    answer: "A team can have upto 5 members.",
   },
+ 
 ];
 
 export const ContactsData = [
