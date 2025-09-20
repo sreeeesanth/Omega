@@ -9,26 +9,37 @@ const TimelineSection = () => {
   const timelineRef = useRef(null);
 
   const hackathonEvents = [
-    {
-      date: "20th September",
-      title: "Registration Open",
-      description: "Join us! Registration starts today. Secure your spot now.",
-    },
-      {
-      date: "20th September",
-      title: "Registration Close",
-      description: "Last call to lock your spot.",
-    },
-      {
-      date: "18th October",
-      title: "OMEGA Begins - The arena comes alive.",
-      description: "Final chance! Registration ends soon. Don't miss out.",
-    },
-    {
-      date: "19th October",
-      title: "OMEGA Finale - Champions are crowned",
-      description: "Final chance! Registration ends soon. Don't miss out.",
-    },
+{
+  date: "20th September",
+  title: "Registration Opens",
+  description: "Kick off your journey with Omega! Registrations are officially open secure your spot today.",
+},
+{
+  date: "8th October",
+  title: "Registration Closes",
+  description: "Final chance to join the challenge. Donâ€™t miss out register before the deadline.",
+},
+{
+  date: "18th October",
+  title: "Omega Day 1: Micromouse Competition",
+  description: "The battle of algorithms begins. Witness robots navigate mazes with precision and speed.",
+},
+{
+  date: "18th October",
+  title: "Omega Day 1: Robo Soccer",
+  description: "Watch bots take the field in an electrifying match of strategy, teamwork, and skill.",
+},
+{
+  date: "19th October",
+  title: "Omega Day 1 & 2: Hardware Hackathon",
+  description: "Innovators unite! Build, prototype, and showcase hardware solutions in just 24 hours.",
+},
+{
+  date: "19th October",
+  title: "Omega Day 2: Line Follower Competition",
+  description: "Robots race against time, following tracks with flawless accuracy and speed.",
+}
+
 
   ];
 
@@ -85,25 +96,52 @@ const TimelineSection = () => {
       );
     });
 
-    // Optimize mobile animations
+    // Enhanced mobile animations with staggered reveal
     const mobileCards = document.querySelectorAll(".mobile-timeline-card");
+    const mobileConnectors = document.querySelectorAll(".mobile-connector");
+    
     mobileCards.forEach((card, index) => {
       gsap.fromTo(
         card,
         {
           opacity: 0,
-          y: 30,
+          x: index % 2 === 0 ? -50 : 50, // Alternate from left and right
+          scale: 0.9,
         },
         {
           opacity: 1,
-          y: 0,
-          duration: 0.4,
-          ease: "power1.out",
+          x: 0,
+          scale: 1,
+          duration: 0.6,
+          ease: "back.out(1.4)",
           scrollTrigger: {
             trigger: card,
+            start: "top bottom-=100",
+            end: "top center+=100",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+
+    // Animate mobile connectors
+    mobileConnectors.forEach((connector, index) => {
+      gsap.fromTo(
+        connector,
+        {
+          height: "0%",
+          opacity: 0,
+        },
+        {
+          height: "100%",
+          opacity: 1,
+          duration: 0.8,
+          ease: "power2.inOut",
+          scrollTrigger: {
+            trigger: connector,
             start: "top bottom-=50",
-            end: "top center+=50",
-            scrub: 0.3,
+            end: "bottom center",
+            toggleActions: "play none none reverse",
           },
         }
       );
@@ -261,36 +299,78 @@ const TimelineSection = () => {
           </div>
         </div>
 
-        {/* Mobile/Tablet Timeline */}
-        <div className="lg:hidden w-full max-w-md px-4">
+        {/* Enhanced Mobile/Tablet Timeline */}
+        <div className="lg:hidden w-full max-w-lg px-4 relative">
+          {/* Vertical Timeline Line */}
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-white to-transparent opacity-30"></div>
+          
           {hackathonEvents.map((event, index) => (
             <div
               key={index}
-              className="mobile-timeline-card mb-8 transform transition-all duration-300"
+              className="mobile-timeline-card relative mb-12 transform transition-all duration-300"
             >
-              <div
-                className="
-                rounded-2xl
-                bg-white/5 backdrop-blur-xl
-                border border-white/20
-                shadow-[0_8px_32px_rgba(0,0,0,0.3)]
-                p-6 flex flex-col
-                hover:shadow-[0_12px_48px_rgba(0,0,0,0.5)] 
-                hover:border-white/40
-              "
-              >
-                <div className="text-white/70 text-xs uppercase tracking-wider mb-2">
-                  {event.date}
+              {/* Timeline Dot */}
+              <div className="absolute left-6 top-8 z-10">
+                <div className="w-4 h-4 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white shadow-[0_0_12px_rgba(255,255,255,0.4)] flex items-center justify-center">
+                  <div className="w-2 h-2 rounded-full bg-white"></div>
                 </div>
-                <h3 className="font-orbitron text-lg font-semibold text-white mb-3">
-                  {event.title}
-                </h3>
-                <p className="font-inter text-sm text-white/80 leading-relaxed">
-                  {event.description}
-                </p>
               </div>
+
+              {/* Connector Line to Card */}
+              <div className="absolute left-12 top-10 w-8 h-0.5 bg-gradient-to-r from-white/40 to-white/10"></div>
+
+              {/* Enhanced Card */}
+              <div className="ml-20 relative">
+                {/* Glow Effect */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 to-transparent blur-xl"></div>
+                
+                <div
+                  className="
+                  relative rounded-2xl
+                  bg-white/5 backdrop-blur-xl
+                  border border-white/20
+                  shadow-[0_8px_32px_rgba(0,0,0,0.3)]
+                  p-6 flex flex-col
+                  hover:shadow-[0_16px_48px_rgba(0,0,0,0.4)] 
+                  hover:border-white/40
+                  hover:bg-white/10
+                  transition-all duration-500
+                  group
+                "
+                >
+                  {/* Date Badge */}
+                  <div className="inline-block w-fit mb-4">
+                    <div className="bg-gradient-to-r from-white/20 to-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30">
+                      <div className="text-white/90 text-xs uppercase tracking-wider font-orbitron font-medium">
+                        {event.date}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Title with Enhanced Styling */}
+                  <h3 className="font-orbitron text-lg font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white/80 group-hover:from-white group-hover:to-white transition-all duration-300">
+                    {event.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="font-inter text-sm text-white/80 leading-relaxed group-hover:text-white/90 transition-colors duration-300">
+                    {event.description}
+                  </p>
+
+                  {/* Subtle Animation Element */}
+                  <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-white/20 group-hover:bg-white/40 transition-all duration-300"></div>
+                </div>
+              </div>
+
+              {/* Connector to Next Item */}
+              {index < hackathonEvents.length - 1 && (
+                <div className="mobile-connector absolute left-7 bottom-[-20px] w-0.5 h-8 bg-gradient-to-b from-white/30 to-white/10"></div>
+              )}
             </div>
           ))}
+
+          {/* Bottom Fade */}
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
         </div>
       </div>
     </div>

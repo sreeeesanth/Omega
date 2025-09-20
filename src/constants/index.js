@@ -51,15 +51,7 @@ export const FaqData = [
     answer:
       "The hackathon is organised by IEEE Robotics and automation society(RAS) MEC SB.",
   },
-  {
-    question: "What are the judging criteria?",
-    answer:
-      "Projects will be judged based on innovation, technical complexity, usability, impact, and presentation quality.",
-  },
-  {
-    question: "Should all the members of the team be from the same college?",
-    answer: "All the team members don't have to be from the same college.",
-  },
+
   {
     question: "What is the team size?",
     answer: "A team can have upto 5 members.",
