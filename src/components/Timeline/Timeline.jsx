@@ -15,6 +15,11 @@ const TimelineSection = () => {
       description: "Join us! Registration starts today. Secure your spot now.",
     },
       {
+      date: "20th September",
+      title: "Registration Close",
+      description: "Last call to lock your spot.",
+    },
+      {
       date: "18th October",
       title: "OMEGA Begins - The arena comes alive.",
       description: "Final chance! Registration ends soon. Don't miss out.",
