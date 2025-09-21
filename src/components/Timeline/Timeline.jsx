@@ -17,7 +17,7 @@ const TimelineSection = () => {
 {
   date: "8th October",
   title: "Registration Closes",
-  description: "Final chance to join the challenge. Donâ€™t miss out register before the deadline.",
+  description: "Final chance to join the challenge. Don't miss out register before the deadline.",
 },
 {
   date: "18th October",
