@@ -370,7 +370,7 @@ const TimelineSection = () => {
           ))}
 
           {/* Bottom Fade */}
-          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+         
         </div>
       </div>
     </div>
