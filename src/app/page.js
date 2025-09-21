@@ -18,7 +18,7 @@ import GoogleFormButton from "@/components/GoogleFormButton";
 //uncomment the sponsorship compīonent if needed
 export default function Home() {
   return (
-    <div className="relative h-screen w-screen  ">
+    <div className="relative min-h-screen w-screen  ">
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center  ">
           <Image src={OmegaLogo} alt="Omega Logo" className="mt-14 md: h-[400px] w-[400px] sm:h-[400px] w-[380px]  relative z-30" fill />
@@ -36,7 +36,9 @@ export default function Home() {
       <Rewards />
       <Timeline />
       <Faq />
-      <GoogleFormButton />
+        <div className="mb-24">
+        <GoogleFormButton />
+      </div>
       <Footer />
     </div>
   );

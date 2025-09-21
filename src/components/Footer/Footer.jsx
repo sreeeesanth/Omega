@@ -31,10 +31,7 @@ const Footer = () => {
           </a>
         </div>
         
-        <div
-          className="absolute bottom-[-407px] h-[307px] w-screen"
-          style={{ boxShadow: "0px 0px 2938.32px 0px #FFFFFF" }}
-        />
+
       </div>
     </>
   );
