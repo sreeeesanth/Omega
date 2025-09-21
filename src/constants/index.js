@@ -56,6 +56,10 @@ export const FaqData = [
     question: "What is the team size?",
     answer: "A team can have upto 5 members.",
   },
+  {
+    question: "What are the rules for the competition",
+    answer: "Will be released shortly",
+  },
  
 ];
 
