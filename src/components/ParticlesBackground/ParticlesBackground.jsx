@@ -20,7 +20,7 @@ export default function ParticlesBackground() {
   }, []);
 
   const particlesOptions = {
-    fullScreen: { enable: true, zIndex: -1 }, // explicitly set zIndex to -1
+    fullScreen: { enable: false, zIndex: -1 }, // explicitly set zIndex to -1
     background: { color: "transparent" },
     fpsLimit: 60,
     particles: {
@@ -68,7 +68,7 @@ export default function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       options={particlesOptions}
-      className="fixed inset-0 w-screen z-10"
+      className="fixed inset-0 z-10"
     />
   );
 }
