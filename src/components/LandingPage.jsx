@@ -28,7 +28,7 @@ const LandingPage = () => {
                 <div className="text-[128px] scale-[0.45] max-sm:text-[30vw] sm:scale-[0.75] lg:scale-[0.85] font-[700] text-white font-[anybody] max-sm:mb-[100px] ">
           
         </div>
-        <div className="flex flex-col sm:flex-row gap-[100px] [@media(max-width:1050px)]:gap-[20px] sm:gap-[40px] sm:mt-[80px] max-sm:mt-[-10vw] justify-around items-center w-full" style={{ marginTop: 'clamp(120px, 20vw, 180px)' }}>
+        <div className="flex sm:pr-20 flex-col scale-150 md:scale-100 sm:flex-row gap-[100px] [@media(max-width:1050px)]:gap-[20px] sm:gap-[40px] sm:mt-[80px] max-sm:mt-[-10vw] justify-around items-center w-full" style={{ marginTop: 'clamp(120px, 20vw, 180px)' }}>
           {/* Calendar row */}
           <div className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
             <Image
