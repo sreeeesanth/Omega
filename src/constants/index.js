@@ -60,6 +60,11 @@ export const FaqData = [
     question: "What are the rules for the competition",
     answer: "Will be released shortly",
   },
+    {
+  question: "Is there any registration fees", 
+  answer: "Micromouse\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nLine Follower\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nRobosoccer\nNon IEEE - 459\nIEEE - 359\nRAS - 259\n\nHardware Hackathon (upto 3 members)\nNon IEEE - 899\nIEEE - 799\nRAS - 599"
+}
+
  
 ];
 
