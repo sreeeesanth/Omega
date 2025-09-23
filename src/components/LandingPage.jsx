@@ -23,7 +23,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div id="home" >
+    <div id="home" className="sm:-top-10 relative" >
       <div className="flex flex-col justify-center items-center ">
                 <div className="text-[128px] scale-[0.45] max-sm:text-[30vw] sm:scale-[0.75] lg:scale-[0.85] font-[700] text-white font-[anybody] max-sm:mb-[100px] ">
           

@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="flex flex-col items-center justify-center min-h-screen text-white"
+        className="flex flex-col items-center justify-center mt-40 mb-40  text-white"
       >
         <h2
           className="mirror-vertical text-center font-bold font-orbitron font-700 xl:scale-100 text-6xl lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8] "
@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div
         id="about"
-        className="flex flex-col items-center justify-center min-h-screen text-white "
+        className="flex flex-col items-center justify-center mb-40 text-white "
       >
         <h2
           className="text-center mirror-vertical font-bold font-orbitron font-700 xl:scale-100 text-6xl lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8] "
