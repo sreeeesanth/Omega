@@ -36,9 +36,9 @@ export default function Home() {
       <Rewards />
       <Timeline />
       <Faq />
-      <div className="mb-24">
+      {/* <div className="mb-24">
         <GoogleFormButton />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

@@ -69,32 +69,32 @@ export default function CountDown() {
   }, []);
 
   // Animate numbers when they change
-  useEffect(() => {
-    if (daysRef.current)
-      gsap.fromTo(
-        daysRef.current,
-        { scale: 1.4, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
-      );
-    if (hoursRef.current)
-      gsap.fromTo(
-        hoursRef.current,
-        { scale: 1.4, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
-      );
-    if (minutesRef.current)
-      gsap.fromTo(
-        minutesRef.current,
-        { scale: 1.4, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
-      );
-    if (secondsRef.current)
-      gsap.fromTo(
-        secondsRef.current,
-        { scale: 1.4, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
-      );
-  }, [remainingTime]);
+  // useEffect(() => {
+  //   if (daysRef.current)
+  //     gsap.fromTo(
+  //       daysRef.current,
+  //       { scale: 1.4, opacity: 0 },
+  //       { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
+  //     );
+  //   if (hoursRef.current)
+  //     gsap.fromTo(
+  //       hoursRef.current,
+  //       { scale: 1.4, opacity: 0 },
+  //       { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
+  //     );
+  //   if (minutesRef.current)
+  //     gsap.fromTo(
+  //       minutesRef.current,
+  //       { scale: 1.4, opacity: 0 },
+  //       { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
+  //     );
+  //   if (secondsRef.current)
+  //     gsap.fromTo(
+  //       secondsRef.current,
+  //       { scale: 1.4, opacity: 0 },
+  //       { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
+  //     );
+  // }, [remainingTime]);
 
   if (remainingTime <= 0) {
     return (
@@ -140,6 +140,7 @@ export default function CountDown() {
           <div className="flex flex-col items-center gap-10 lg:scale-90 xl:scale-100 md:scale-75 sm:scale-[.65] scale-75">
             <CountdownCircleTimer
               {...timerProps}
+              key={`hours-${Math.floor(remainingTime / 86400)}`}
               colors={["#ffffff", "transparent"]}
               duration={daySeconds}
               initialRemainingTime={remainingTime % daySeconds}
@@ -155,6 +156,7 @@ export default function CountDown() {
           <div className="flex flex-col items-center gap-10 lg:scale-90 xl:scale-100 md:scale-75 sm:scale-[.65] scale-75">
             <CountdownCircleTimer
               {...timerProps}
+              key={`minutes-${Math.floor(remainingTime / 3600)}`}
               colors={["#ffffff", "transparent"]}
               duration={hourSeconds}
               initialRemainingTime={remainingTime % hourSeconds}
@@ -169,6 +171,7 @@ export default function CountDown() {
             <CountdownCircleTimer
               {...timerProps}
               colors={["#ffffff", "transparent"]}
+              key={`seconds-${Math.floor(remainingTime / 60)}`} // Changes every minute
               duration={minuteSeconds}
               initialRemainingTime={remainingTime % minuteSeconds}
             >
