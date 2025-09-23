@@ -158,9 +158,18 @@ const TimelineSection = () => {
       className="relative flex flex-col items-center justify-center p-2"
     >
       <div className="m-auto container font-generalSans min-h-screen flex justify-center flex-col items-center pt-[100px]">
-        <h2 className="text-center font-bold text-4xl lg:text-5xl text-white mb-16 tracking-wider">
-          Timeline
-        </h2>
+<div
+      id="about"
+      className="flex flex-col items-center justify-center  text-white"
+    >
+      <h2
+        className=" text-center font-bold font-orbitron font-700 xl:scale-100 text-6xl lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8]"
+        data-text="ONE LAKH PRIZE POOL"
+      >
+       Timeline
+      </h2>
+      
+    </div>
 
         {/* Desktop Timeline */}
         <div className="hidden lg:block mt-[60px] relative w-full max-w-7xl h-[1300px]">
