@@ -9,7 +9,7 @@ import { MdOutlineClose } from "react-icons/md";
 
 export default function Nav() {
   return (
-    <nav className="w-full fixed top-0 left-0 h-[77px] z-10 bg-transparent flex items-center justify-between px-6">
+    <nav className="w-screen fixed top-0 left-0 h-[77px] z-10 bg-transparent flex items-center justify-between px-6">
       
       <Image src={IeeeLogo} alt="ieee" width={82} height={82} />
 

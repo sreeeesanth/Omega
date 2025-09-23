@@ -36,7 +36,7 @@ const FaqCard = ({ question, answer }) => {
         </div>
         <div
           className={`transition-all duration-400 ease-in-out ${
-            active ? "max-h-[50vh] opacity-100 mt-[18px]" : "max-h-0 opacity-0"
+            active ? "max-h-[60vh] opacity-100 mt-[18px]" : "max-h-0 opacity-0"
           }`}
         >
           <div className="w-full py-[16px] flex items-center justify-left">

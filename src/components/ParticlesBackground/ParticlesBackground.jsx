@@ -20,28 +20,28 @@ export default function ParticlesBackground() {
   }, []);
 
   const particlesOptions = {
-    fullScreen: { enable: true, zIndex: -1 }, // explicitly set zIndex to -1
+    fullScreen: { enable: false, zIndex: -1 }, // explicitly set zIndex to -1
     background: { color: "transparent" },
     fpsLimit: 60,
     particles: {
-      number: { value: 70, density: { enable: true, area: 800 } },
+      number: { value: 170, density: { enable: true, area: 800 } },
       color: { value: "#cc1d30" },
       links: {
         enable: true,
         distance: 120,
         color: "#fff",
-        opacity: 0.12,
+        opacity: 0.09,
         width: 1,
       },
       opacity: {
-        value: 1,
+        value: 0.5,
         random: { enable: true, minimumValue: 0.5 },
       },
-      size: { value: { min: 1, max: 5 }, random: true },
+      size: { value: { min: 1, max: 6  }, random: true },
       shape: { type: "circle" },
       move: {
         enable: true,
-        speed: 0.5,
+        speed: 0.8,
         direction: "none",
         random: true,
         straight: false,
@@ -68,7 +68,7 @@ export default function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       options={particlesOptions}
-      className="fixed inset-0 z-10"
+      className="fixed w-screen inset-0 z-10"
     />
   );
 }

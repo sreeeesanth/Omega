@@ -13,8 +13,8 @@ const ParticlesBackground = dynamic(
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Omega 2023",
-  description: "Annual Tech Fest of Govt. Model Engineering College",
+  title: "OMEGA MEC 2025",
+  description: "OMEGA MEC 2025 Official Website, IEEE MEC SB",
    icon: "/image.png",
 };
 
@@ -26,11 +26,11 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${inter.className} relative min-h-screen`}
+        className={`${inter.className} relative w-screen min-h-screen`}
         style={{ backgroundColor: "#b12020" }} // deep red background
       >
         {/* Particle Background (client only, behind everything) */}
-        <ParticlesBackground  />
+        <ParticlesBackground />
         {children}
       </body>
     </html>

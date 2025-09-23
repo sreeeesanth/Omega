@@ -15,7 +15,7 @@ const Faq = () => {
         F.A.Q
       </h1>
       {FaqData.map((data, i) => (
-        <div className="mb-[10px] sm:mb-[16px]" data-aos="fade-right" key={i}>
+        <div className="mb-[10px] sm:mb-[16px] whitespace-pre-line" data-aos="fade-right" key={i}>
           <FaqCard question={data.question} answer={data.answer} />
         </div>
       ))}

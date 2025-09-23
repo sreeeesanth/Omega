@@ -35,36 +35,37 @@ export const NavbarItems = [
 
 export const FaqData = [
   {
-    question: "What is the team size?",
-    answer: "A team can have 2 to 4 members.",
-  },
-  {
-    question: "Is there any registration fee?",
-    answer: "Nada. Participation in the hackathon is completely free of cost.",
-  },
-  {
-    question: "When and where is the hackathon taking place?",
-    answer:
-      "The hackathon will take place on September 21 & 22 at Model Engineering College, Kochi.",
-  },
-  {
-    question: "Can I work on a project that I've already started?",
-    answer:
-      "No, all projects must be developed from scratch during the hackathon to ensure fairness and equal opportunities for all participants.",
+    question: "When and where is the Event taking place? ",
+    answer: "The Event will take place on October 18,19 at Model Engineering College, Kochi.",
   },
   {
     question: "What are the judging criteria?",
-    answer:
-      "Projects will be judged based on innovation, technical complexity, usability, impact, and presentation quality.",
+    answer: "Robots will be judged on accuracy, speed, path optimization, technical design, innovation, and presentation. ",
   },
   {
     question: "Should all the members of the team be from the same college?",
-    answer: "All the team members don't have to be from the same college.",
+    answer:"All the team members don't have to be from the same college.",
   },
   {
-    question: "Who is organising the hackathon?",
-    answer: "The hackathon is organised by IEEE Computer Society MEC SB.",
+    question: "Who is organising the Event OMEGA?",
+    answer:
+      "The hackathon is organised by IEEE Robotics and automation society(RAS) MEC SB.",
   },
+
+  {
+    question: "What is the team size?",
+    answer: "A team can have upto 5 members.",
+  },
+  {
+    question: "What are the rules for the competition",
+    answer: "Will be released shortly",
+  },
+    {
+  question: "Is there any registration fees", 
+  answer: "Micromouse\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nLine Follower\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nRobosoccer\nNon IEEE - 459\nIEEE - 359\nRAS - 259\n\nHardware Hackathon (upto 3 members)\nNon IEEE - 899\nIEEE - 799\nRAS - 599"
+}
+
+ 
 ];
 
 export const ContactsData = [

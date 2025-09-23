@@ -63,3 +63,6 @@ body {
   z-index: -1;
   background-clip: text;
 }
+html, body {
+  overflow-x: hidden;
+}
