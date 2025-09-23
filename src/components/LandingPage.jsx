@@ -30,7 +30,7 @@ const LandingPage = () => {
         </div>
         <div className="flex sm:pr-20 flex-col scale-150 md:scale-100 sm:flex-row gap-[100px] [@media(max-width:1050px)]:gap-[20px] sm:gap-[40px] sm:mt-[80px] max-sm:mt-[-10vw] justify-around items-center w-full" style={{ marginTop: 'clamp(120px, 20vw, 180px)' }}>
           {/* Calendar row */}
-          <div className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
+          <div  data-aos="fade-right" className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
             <Image
               src={Calendar}
               alt="Calendar Icon"
@@ -41,7 +41,7 @@ const LandingPage = () => {
             </p>
           </div>
           {/* Location row */}
-          <div className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
+          <div data-aos="fade-left" className="flex flex-row items-center gap-[16px] justify-center w-full [@media(max-width:1050px)]:flex-col [@media(max-width:1050px)]:gap-[8px] [@media(max-width:1050px)]:items-center">
             <Image
               src={Location}
               alt="Location Icon"

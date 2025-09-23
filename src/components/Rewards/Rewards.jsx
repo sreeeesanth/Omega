@@ -10,6 +10,7 @@ const Rewards = () => {
       className="flex flex-col items-center justify-center  text-white"
     >
       <h2
+        data-aos="zoom-out-right"
         className="mirror-vertical text-center font-bold font-orbitron font-700 xl:scale-100 text-6xl lg:scale-90 md:scale-75 scale-[.65] text-[#FFFFFF]/[0.8]"
         data-text="ONE LAKH PRIZE POOL"
       >

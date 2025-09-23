@@ -113,6 +113,7 @@ export default function CountDown() {
   return (
     <div className="flex flex-col  items-center justify-center w-screen lg:gap-32 md:gap-24 xl:gap-40 font-bold text-white font-orbitron xl:mt-[270px] lg:mt-[160px] sm:mt-[100px] mt-[120px] overflow-hidden">
       <div
+        data-aos="fade-up"
         ref={titleRef}
         className="xl:scale-100 mt-[60px] text-6xl lg:scale-90 md:scale-75 sm:mt-[0px] scale-[.65]"
       >
@@ -121,7 +122,7 @@ export default function CountDown() {
         </h2>
       </div>
 
-      <div className="flex justify-around w-full md:gap-0 flex-wrap mt-16 sm:mt-0">
+      <div data-aos="flip-up" className="flex justify-around w-full md:gap-0 flex-wrap mt-16 sm:mt-0">
         <div className="flex flex-grow justify-around md:gap-0">
           {/* Days */}
           <div className="flex flex-col items-center gap-10 lg:scale-90 xl:scale-100 md:scale-75 sm:scale-[.65] scale-75">
