@@ -1,4 +1,4 @@
-"use client"; // 👈 Add this at the very top
+"use client";  // 👈 Add this at the very top
 
 import {
   About,
@@ -22,7 +22,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   return (
@@ -50,7 +50,7 @@ export default function Home() {
       {/* <Sponsors /> */}
       <Rewards />
       <Timeline />
-      {/*<Events/>*/}
+      <Events/>
 
       <Faq />
       <Footer />
