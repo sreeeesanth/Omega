@@ -8,4 +8,6 @@ export { default as Navbar } from './Navbar';
 export { default as Rewards } from './Rewards/Rewards';
 export { default as Sponsors } from './Sponsors/Sponsors';
 export { default as Timeline } from './Timeline/Timeline';
+export { default as Events } from './Events';
+
 export { default as ParticlesBackground } from './ParticlesBackground/ParticlesBackground';

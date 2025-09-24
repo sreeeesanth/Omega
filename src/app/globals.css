@@ -15,6 +15,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .navbar__item-bg {
   @apply bg-gradient-to-b from-[#FFFFFF]/[.17] to-[#D8D4D4]/[.83];
 }

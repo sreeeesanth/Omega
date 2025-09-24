@@ -31,6 +31,10 @@ export const NavbarItems = [
     title: "CONTACT",
     link: "#contact",
   },
+  {
+    title: "EVENTS",
+    link:"#Events",
+  },
 ];
 
 export const FaqData = [
@@ -132,3 +136,29 @@ export const AboutData = [
     about_mechack: "OMEGA is a national-level celebration of robotics and innovation, bringing together the brightest minds from across the country. Designed to inspire and challenge, the event combines high-stakes competitions, hands-on learning, and visionary ideas. Participants showcase their skills in flagship events like the Micromouse Maze-Solving Challenge and Line Follower Robo Soccer Hackathon, where creativity meets technical precision. With expert-led workshops, thought-provoking talks, and engaging technical contests, OMEGA creates a space where students, researchers, and enthusiasts can learn, compete, and collaborate. At its heart, OMEGA is about building robots today to shape the technologies of tomorrow.",
   }
 ];
+
+export const EventsData = {
+  day1: [
+    { time: "8am - 9am", title: "Registration", venue: "Front Desk" },
+    { time: "9am - 10am", title: "Inaugural Ceremony", venue: "Auditorium" },
+    { time: "10:00am - 11:00am", title: "Ice Breaker", venue: "SDPK & Media Hall" },
+    { time: "11:00am - 1:00pm", title: "Batch 1 to KSUM (Industrial Visit)" },
+    { time: "11:00am - 12:00pm", title: "Hardware Session 1 (Batch 2)", venue: "SDPK & Media Hall" },
+    { time: "12:00pm - 1:00pm", title: "Batch 2 Lunch", venue: "Room 210 & 209" },
+    { time: "1:00pm - 2:00pm", title: "Batch 1 Return & Lunch", venue: "Room 210 & 209" },
+    { time: "1:00pm - 3:00pm", title: "Batch 2 to KSUM (Industrial Visit)" },
+    { time: "2:00pm - 3:00pm", title: "Hardware Session 1 (Batch 1)", venue: "SDPK & Media Hall" },
+    { time: "3:00pm - 4:00pm", title: "Batch 1 Return & Tea Break", venue: "Room 210 & 209" },
+    { time: "4:00pm - 6:30pm", title: "Hardware Session 2", venue: "SDPK & Media Hall" },
+    { time: "6:30pm - 7:30pm", title: "CAD Session 1", venue: "SDPK & Media Hall" },
+    { time: "7:30pm - 9:00pm", title: "Dinner", venue: "Amphi / Room 210 & 209" },
+    { time: "9:00pm - 10:30pm", title: "CAD Session 2", venue: "SDPK & Media Hall" },
+    { time: "10:30pm - 12:00am", title: "Midnight Jamming Session & Fun Games", venue: "Amphi" },
+
+    // more events...
+  ],
+  day2: [
+    { time: "8am - 9am", title: "Workshop", venue: "Hall A" },
+    // more events...
+  ],
+};

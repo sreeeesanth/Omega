@@ -4,6 +4,7 @@ import {
   About,
   Contact,
   CountDown,
+  Events,
   Faq,
   Footer,
   LandingPage,
@@ -49,6 +50,8 @@ export default function Home() {
       {/* <Sponsors /> */}
       <Rewards />
       <Timeline />
+      {/*<Events/>*/}
+
       <Faq />
       <Footer />
     </div>
