@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { EventsData } from "@/constants";
-import { red } from "@mui/material/colors";
 
 const Events = () => {
   const [activeDay, setActiveDay] = useState("day1");
@@ -20,24 +19,22 @@ const Events = () => {
 
       {/* Day toggle buttons */}
       <div className="flex justify-center mb-8 z-50">
-        <div className="bg-card/50 flex  transition-all duration-[1s] gap-4 text-white backdrop-blur-sm rounded-lg p-1 border border-border">
+        <div className="bg-card/50 flex transition-all duration-[1s] gap-4 text-white backdrop-blur-sm rounded-lg p-1 border border-border relative">
           <div
-            className={`absolute  transition-all duration-[1s] bg-white bg-opacity-15 w-[45%] h-[85%]  rounded-lg ${
+            className={`absolute transition-all duration-[1s] bg-white bg-opacity-15 w-[45%] h-[85%] rounded-lg ${
               activeDay === "day2"
                 ? "left-[100%] translate-x-[-105%]"
                 : "left-1"
-            } `}
+            }`}
           ></div>
           <button
             onClick={() => setActiveDay("day1")}
-            className={`p-3 ${activeDay === "day1" ? " text-white" : ""}`}
+            className={`p-3 ${activeDay === "day1" ? "text-white" : ""}`}
           >
             Day 1 | Oct 18
           </button>
           <button
-            onClick={() => {
-              setActiveDay("day2");
-            }}
+            onClick={() => setActiveDay("day2")}
             className={`p-3 ${activeDay === "day2" ? "text-white" : ""}`}
           >
             Day 2 | Oct 19
@@ -52,11 +49,18 @@ const Events = () => {
             key={index}
             className="bg-card/80 backdrop-blur-sm rounded-lg p-4 border border-border"
           >
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+            <div className="relative flex flex-col sm:flex-row sm:items-center justify-between">
+              {/* Time (left) */}
               <span className="text-white font-semibold text-primary">
                 {event.time}
               </span>
-              <span className="text-white font-medium">{event.title}</span>
+
+              {/* Title (centered always) */}
+              <span className="absolute left-1/2 transform -translate-x-1/2 text-white font-medium text-center">
+                {event.title}
+              </span>
+
+              {/* Venue (right) */}
               {event.venue && (
                 <span className="text-sm text-white text-muted-foreground">
                   {event.venue}
