@@ -149,9 +149,10 @@ export const EventsData = {
     // more events...
   ],
   day2: [
-    { time: "9:00am", title: "Line Follower Registration", venue: "Hall A" },
-    { time: "10:00am", title: "Line Follower Begins", venue: "Hall A" },
-    { time: "6:00pm", title: "Line Follower Ends", venue: "Hall A" },
+    { time: "7:00am", title: "Hardware Hackathon Begins", venue: "SDPK & Media Hall" },
+    { time: "9:00am", title: "Line Follower Registration", venue: "External Audi" },
+    { time: "10:00am", title: "Line Follower Begins", venue: "External Audi" },
+    { time: "6:00pm", title: "Line Follower Ends", venue: "External Audi" },
     // more events...
   ],
 };
