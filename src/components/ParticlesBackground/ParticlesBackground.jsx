@@ -68,7 +68,7 @@ export default function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       options={particlesOptions}
-      className="fixed w-screen inset-0 z-10"
+      className="fixed w-screen inset-0 z-0"
     />
   );
 }

@@ -6,6 +6,20 @@ import { GrFormAdd } from "react-icons/gr";
 const FaqCard = ({ question, answer }) => {
   const [active, setActive] = useState(false);
 
+  // Function to handle file downloads
+  const handleDownload = (filename, displayName) => {
+    const link = document.createElement("a");
+    link.href = `/rules/${filename}`;
+    link.download = `${displayName}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // Check if this is the competition rules question
+  const isCompetitionRules =
+    question === "What are the rules for the competition";
+
   return (
     <div className="relative w-[85vw]  transition-all duration-[1s] ease-in-out z-30 xl:w-[1080px] pt-[1px] pl-[1px] rounded-[14px]">
       <div
@@ -43,9 +57,39 @@ const FaqCard = ({ question, answer }) => {
           }`}
         >
           <div className="transition-all duration-[1s] ease-in-out w-full py-[16px] flex items-center justify-left">
-            <p className="transition-all duration-[1s] ease-in-out text-[#ffffff] w-11/12 text-[15px] sm:text-[18px] tracking-[-0.2px] leading-tight">
-              {answer}
-            </p>
+            <div className="w-11/12">
+              <p className="transition-all duration-[1s] ease-in-out text-[#ffffff] text-[15px] sm:text-[18px] tracking-[-0.2px] leading-tight">
+                {isCompetitionRules ? "Competition Rules: " : answer}
+              </p>
+
+              {/* Download buttons for competition rules */}
+              {isCompetitionRules && (
+                <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                  <button
+                    onClick={() =>
+                      handleDownload(
+                        "Line_Follower RuleBook.pdf",
+                        "Line_Follower RuleBook"
+                      )
+                    }
+                    className="z-40 px-10 py-5 m-2 bg-[#d53232] text-white font-bold rounded-lg hover:bg-[#e32e2e] hover:scale-[110%] transition duration-300"
+                  >
+                    📄 Download Rules Of Line Follower
+                  </button>
+                  <button
+                    onClick={() =>
+                      handleDownload(
+                        "MazeSolver Rulebook.pdf",
+                        "MazeSolver Rulebook"
+                      )
+                    }
+                    className="z-40 px-10 py-5 m-2 bg-[#d53232] text-white font-bold rounded-lg hover:bg-[#e32e2e] hover:scale-[110%] transition duration-300 "
+                  >
+                    📄 Download Rules Of Maze Solver
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
