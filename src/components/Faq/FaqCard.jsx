@@ -5,6 +5,7 @@ import { GrFormAdd } from "react-icons/gr";
 
 const FaqCard = ({ question, answer }) => {
   const [active, setActive] = useState(false);
+  const [textActive, setTextActive] = useState(false);
 
   // Function to handle file downloads
   const handleDownload = (filename, displayName) => {
@@ -27,7 +28,16 @@ const FaqCard = ({ question, answer }) => {
         aria-hidden="true"
       ></div>
       <div
-        onClick={() => setActive(!active)}
+        onClick={() => {
+          if (!active) {
+            setTextActive((prev) => !prev);
+          } else {
+            setTimeout(() => {
+              setTextActive((prev) => !prev);
+            }, 1000); // 1.5s delay
+          }
+          setActive(!active);
+        }}
         className={`relative cursor-pointer  transition-all duration-[1s] ease-in-out w-full px-[25px] pt-[20px] rounded-[14px] ${
           !active ? "pb-[20px]" : ""
         }`}
@@ -37,7 +47,16 @@ const FaqCard = ({ question, answer }) => {
             {question}
           </p>
           <button
-            onClick={() => setActive(!active)}
+            onClick={() => {
+              if (!active) {
+                setTextActive((prev) => !prev);
+              } else {
+                setTimeout(() => {
+                  setTextActive((prev) => !prev);
+                }, 1000); // 1.5s delay
+              }
+              setActive(!active);
+            }}
             className="transition-all duration-[1s] ease-in-out w-1/12 sm:mr-[-10px] md:mr-[-30px] lg:mr-[-50px]"
           >
             <span
@@ -59,7 +78,9 @@ const FaqCard = ({ question, answer }) => {
           <div className="transition-all duration-[1s] ease-in-out w-full py-[16px] flex items-center justify-left">
             <div className="w-11/12">
               <p className="transition-all duration-[1s] ease-in-out text-[#ffffff] text-[15px] sm:text-[18px] tracking-[-0.2px] leading-tight">
-                {isCompetitionRules ? "Competition Rules: " : answer}
+                {isCompetitionRules
+                  ? "Competition Rules: "
+                  : textActive && answer}
               </p>
 
               {/* Download buttons for competition rules */}

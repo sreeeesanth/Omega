@@ -7,7 +7,7 @@ const Events = () => {
   return (
     <div
       id="Events"
-      className="min-h-screen transition-all duration-75 z-20 flex flex-col justify-center items-center pt-[10px] max-sm:pt-[20px] px-[40px] max-sm:px-[27px]"
+      className="min-h-screen transition-all duration-[1.5s] z-20 flex flex-col justify-center items-center pt-[10px] max-sm:pt-[20px] px-[40px] max-sm:px-[27px]"
     >
       {/* Title */}
       <h1
@@ -51,18 +51,18 @@ const Events = () => {
           >
             <div className="relative flex flex-col sm:flex-row sm:items-center justify-between">
               {/* Time (left) */}
-              <span className="text-white font-semibold text-primary">
+              <span className="text-white font-semibold text-primary text-center">
                 {event.time}
               </span>
 
               {/* Title (centered always) */}
-              <span className="absolute left-1/2 transform -translate-x-1/2 text-white font-medium text-center">
+              <span className="text-white sm:absolute left-1/2 font-semibold text-primary text-center sm:-translate-x-1/2">
                 {event.title}
               </span>
 
               {/* Venue (right) */}
               {event.venue && (
-                <span className="text-sm text-white text-muted-foreground">
+                <span className="text-white font-semibold text-primary text-center">
                   {event.venue}
                 </span>
               )}
