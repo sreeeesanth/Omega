@@ -39,16 +39,23 @@ export const NavbarItems = [
 
 export const FaqData = [
   {
+    question: "Is there any registration fees",
+    answer:
+      "Micromouse\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nLine Follower\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nRobosoccer\nNon IEEE - 459\nIEEE - 359\nRAS - 259\n\nHardware Hackathon (upto 3 members)\nNon IEEE - 899\nIEEE - 799\nRAS - 599",
+  },
+  {
     question: "When and where is the Event taking place? ",
-    answer: "The Event will take place on October 18,19 at Model Engineering College, Kochi.",
+    answer:
+      "The Event will take place on October 18,19 at Model Engineering College, Kochi.",
   },
   {
     question: "What are the judging criteria?",
-    answer: "Robots will be judged on accuracy, speed, path optimization, technical design, innovation, and presentation. ",
+    answer:
+      "Robots will be judged on accuracy, speed, path optimization, technical design, innovation, and presentation. ",
   },
   {
     question: "Should all the members of the team be from the same college?",
-    answer:"All the team members don't have to be from the same college.",
+    answer: "All the team members don't have to be from the same college.",
   },
   {
     question: "Who is organising the Event OMEGA?",
@@ -57,19 +64,13 @@ export const FaqData = [
   },
 
   {
-    question: "What is the team size?",
-    answer: "A team can have upto 5 members.",
-  },
-  {
     question: "What are the rules for the competition",
     answer: "Will be released shortly",
   },
-    {
-  question: "Is there any registration fees", 
-  answer: "Micromouse\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nLine Follower\nNon IEEE - 1799\nIEEE - 1499\nRAS - 999\n\nRobosoccer\nNon IEEE - 459\nIEEE - 359\nRAS - 259\n\nHardware Hackathon (upto 3 members)\nNon IEEE - 899\nIEEE - 799\nRAS - 599"
-}
-
- 
+  {
+    question: "What is the team size?",
+    answer: "A team can have upto 5 members.",
+  },
 ];
 
 export const ContactsData = [
