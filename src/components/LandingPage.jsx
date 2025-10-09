@@ -37,7 +37,7 @@ const LandingPage = () => {
               className="invert brightness-0 w-[20px] h-[20px] sm:w-[40px] sm:h-[40px] lg:w-[62px] lg:h-[62px]"
             />
             <p className="text-white font-orbitron text-[15px] sm:text-[32px] scale-[0.70] lg:scale-[0.85] xl:scale-100 font-[700] text-center sm:text-left">
-              OCTOBER 18,19
+              DECEMBER 6,7
             </p>
           </div>
           {/* Location row */}
