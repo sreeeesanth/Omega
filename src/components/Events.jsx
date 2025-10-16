@@ -31,13 +31,13 @@ const Events = () => {
             onClick={() => setActiveDay("day1")}
             className={`p-3 ${activeDay === "day1" ? "text-white" : ""}`}
           >
-            Day 1 | Oct 18
+            Day 1 | Dec 6
           </button>
           <button
             onClick={() => setActiveDay("day2")}
             className={`p-3 ${activeDay === "day2" ? "text-white" : ""}`}
           >
-            Day 2 | Oct 19
+            Day 2 | Dec 7
           </button>
         </div>
       </div>

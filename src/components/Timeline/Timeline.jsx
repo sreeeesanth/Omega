@@ -15,27 +15,27 @@ const TimelineSection = () => {
   description: "Kick off your journey with Omega! Registrations are officially open secure your spot today.",
 },
 {
-  date: "8th October",
+  date: "25th November",
   title: "Registration Closes",
   description: "Final chance to join the challenge. Don't miss out register before the deadline.",
 },
 {
-  date: "18th October",
+  date: "6th December",
   title: "Omega Day 1: Micromouse Competition",
   description: "The battle of algorithms begins. Witness robots navigate mazes with precision and speed.",
 },
 {
-  date: "18th October",
+  date: "6th December",
   title: "Omega Day 1: Robo Soccer",
   description: "Watch bots take the field in an electrifying match of strategy, teamwork, and skill.",
 },
 {
-  date: "19th October",
+  date: "7th December",
   title: "Omega Day 1 & 2: Hardware Hackathon",
   description: "Innovators unite! Build, prototype, and showcase hardware solutions in just 24 hours.",
 },
 {
-  date: "19th October",
+  date: "7th December",
   title: "Omega Day 2: Line Follower Competition",
   description: "Robots race against time, following tracks with flawless accuracy and speed.",
 }
