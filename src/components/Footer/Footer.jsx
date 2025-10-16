@@ -21,7 +21,7 @@ const Footer = () => {
             <Linkedin size={20} className="text-white" />
           </a>
           <a
-            href="https://www.instagram.com/ieeemec/"
+            href="https://www.instagram.com/ieeerasmec/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110"
