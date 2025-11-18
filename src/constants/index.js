@@ -46,7 +46,7 @@ export const FaqData = [
   {
     question: "When and where is the Event taking place? ",
     answer:
-      "The Event will take place on October 18,19 at Model Engineering College, Kochi.",
+      "The Event will take place on December 6,7 at Model Engineering College, Kochi.",
   },
   {
     question: "What are the judging criteria?",
