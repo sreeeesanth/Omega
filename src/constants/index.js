@@ -143,14 +143,13 @@ export const EventsData = {
     { time: "9:00am - 9:30am", title: "Registration", venue: "Front Desk" },
     { time: "9:30am - 10:00am", title: "Inaugural Ceremony", venue: "Auditorium" },
     { time: "10:00am - 6:00pm", title: "Micromouse ", venue: "SDPK & Media Hall" },
-    { time: "6:00pm - 9:00pm", title: "Robo Soccer" , venue: "external" },
-    { time: "1:00pm", title: "Hardware Hackathon Begins", venue: "SDPK & Media Hall" },
+    { time: "2:30pm", title: "Hardware Hackathon Begins", venue: "SDPK & Media Hall" },
     
 
     // more events...
   ],
   day2: [
-    { time: "7:00am", title: "Hardware Hackathon Begins", venue: "SDPK & Media Hall" },
+    { time: "7:00am", title: "Hardware Hackathon Ends", venue: "SDPK & Media Hall" },
     { time: "9:00am", title: "Line Follower Registration", venue: "External Audi" },
     { time: "10:00am", title: "Line Follower Begins", venue: "External Audi" },
     { time: "6:00pm", title: "Line Follower Ends", venue: "External Audi" },
